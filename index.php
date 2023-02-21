@@ -112,21 +112,70 @@
 // Session Variables
 
 
-session_start();
-$_SESSION["user"] = "@JPG93";
-$_SESSION["age"] = "23";
-$_SESSION["genre"] = "hiphop";
+// session_start();
+// $_SESSION["user"] = "@JPG93";
+// $_SESSION["age"] = "23";
+// $_SESSION["genre"] = "hiphop";
 
-if (isset($_SESSION["user"])) {
-    echo "User: {$_SESSION["user"]}";
-}
-$_SESSION["user"] = "@bob33";
-if (isset($_SESSION["user"])) {
-    echo "New User: {$_SESSION["user"]}";
-}
-session_unset();
-session_destroy();
-var_dump($_SESSION);
+// if (isset($_SESSION["user"])) {
+//     echo "User: {$_SESSION["user"]}";
+// }
+// $_SESSION["user"] = "@bob33";
+// if (isset($_SESSION["user"])) {
+//     echo "New User: {$_SESSION["user"]}";
+// }
+// session_unset();
+// session_destroy();
+// var_dump($_SESSION);
+// 
+
+
+
+
+// Classes
+
+// class car {
+//     public $doors = 4;
+// public function __construct($name, $doors = 4, $color = "black"){
+    
+//     $this->doors = $doors;
+//     $this->color = $color;
+//     $this->name = $name;
+// }
+
+// public function printName() {
+//     echo $this->name;
+// }
+
+// public function statement() {
+//     echo "This car is a {$this -> name} and it has {$this -> doors} doors. The color of it is {$this -> color}";
+// }
+
+// }
+
+// $honda = new Car("Civic");
+// $greenHonda = new Car("Civic", 2, "Green");
+// $bmw = new Car("M6", 4, "Space Grey");
+
+// echo $honda -> doors;
+// echo $greenHonda -> color;
+
+// $honda->printName();
+
+// echo "<pre>" . var_dump($honda) . "</pre>";
+// $honda -> statement();
+// $greenHonda -> statement();
+// $bmw -> statement();
+
+
+
+
+
+
+// Extending Classes
+
+
+
 ?>
 
 <!DOCTYPE html>
