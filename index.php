@@ -195,20 +195,46 @@
 
 // Public vs Protected vs Private Variables
 
+// require("classes/Car.php");
+// require("classes/Honda.php");
+// require("classes/BMW.php");
+
+
+
+// $car1 = new Honda("Civic", 2, "Green", "25,000");
+
+// // $car2 =  new BMW("M3", 4, "Space Grey", "80,000");
+
+// // $car1->price();
+// // $car1->statement();
+// // $car1->location();
+// // foreach (Car::$states as $state) {
+// //     echo "<h1>{$state}</h1>"
+// // }
+
+// $car1->states()
+
+
+
+
+
+
+
+
+
+// Dependency Injection
+
 require("classes/Car.php");
+require("classes/Inventory.php");
 require("classes/Honda.php");
 require("classes/BMW.php");
 
 
 
-$car1 = new Honda("Civic", 2, "Green", "25,000");
-
-// $car2 =  new BMW("M3", 4, "Space Grey", "80,000");
-
+$car1 = new Honda("Civic", 2, "Green", "25,000", new Inventory);
 $car1->price();
-$car1->statement();
-// $car1->location();
-
+$car2 = new BMW("ML350", 4, "Bluw", "80,000", new Inventory);
+$car2->price();
 
 ?>
 

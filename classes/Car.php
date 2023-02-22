@@ -5,6 +5,10 @@ class Car {
     public $color = "black";
     public $company = "Nissan";
     private $location = "Northern Blvd";
+    public static $states = [
+        "NY", "GA", "FL", "CO", "PA"
+    ];
+    
     
     public function __construct($name, $doors, $color, $price) {
 
@@ -14,8 +18,19 @@ class Car {
         $this -> price = $price;
     } 
 
+    public static function city() {
+        echo "Austell, GA";
+    } 
+
     private function store() {
         echo "<h1>Sold at {$this -> location}</h1>";
+    }
+
+    public static function states() {
+        foreach (Car::$states as $state) {
+                echo "<h1>{$state}</h1>";
+        }
+            
     }
     
 
