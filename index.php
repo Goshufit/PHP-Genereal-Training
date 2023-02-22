@@ -173,7 +173,41 @@
 
 
 // Extending Classes
+// require("classes/Car.php");
+// require("classes/Honda.php");
+// require("classes/BMW.php");
 
+
+
+// $car1 = new Honda("Civic", 2, "Green", "25,000");
+
+// $car2 =  new BMW("M3", 4, "Space Grey", "80,000");
+
+// $car1->statement();
+// $car1->price();
+// $car2->price();
+// $car2->sportsPackage()
+
+
+
+
+
+
+// Public vs Protected vs Private Variables
+
+require("classes/Car.php");
+require("classes/Honda.php");
+require("classes/BMW.php");
+
+
+
+$car1 = new Honda("Civic", 2, "Green", "25,000");
+
+// $car2 =  new BMW("M3", 4, "Space Grey", "80,000");
+
+$car1->price();
+$car1->statement();
+// $car1->location();
 
 
 ?>
@@ -188,8 +222,5 @@
 </head>
 <body>
     <h1>Thank God</h1>
-    <form action="index.php" method="POST">
-        <input type="text" name="fname">
-        <button>CLICK</button>
-</body>
+
 </html>
