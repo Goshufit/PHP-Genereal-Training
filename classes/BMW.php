@@ -2,6 +2,7 @@
 // require("<classes/Car.php");
 class BMW extends Car {
     public $company = "BMW";
+    public $companyYears = 49;
 
     public function __construct($name, $doors, $color, $price) {
 

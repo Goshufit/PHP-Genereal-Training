@@ -224,18 +224,114 @@
 
 // Dependency Injection
 
-require("classes/Car.php");
-require("classes/Inventory.php");
-require("classes/Honda.php");
-require("classes/BMW.php");
+// require("classes/Car.php");
+// require("classes/Inventory.php");
+// require("classes/Honda.php");
+// require("classes/BMW.php");
 
 
 
-$car1 = new Honda("Civic", 2, "Green", "25,000", new Inventory);
-$car1->price();
-$car2 = new BMW("ML350", 4, "Bluw", "80,000", new Inventory);
-$car2->price();
+// $car1 = new Honda("Civic", 2, "Green", "25,000", new Inventory);
+// $car1->price();
+// $car2 = new BMW("ML350", 4, "Bluw", "80,000", new Inventory);
+// $car2->price();
 
+
+
+
+
+
+// Interfaces
+
+
+// require("classes/Car.php");
+// require("classes/Inventory.php");
+// require("classes/Honda.php");
+// require("classes/BMW.php");
+
+
+
+// $car1 = new Honda("Civic", 2, "Green", "25,000", new Inventory);
+// $car1->price();
+// $car2 = new BMW("ML350", 4, "Blue", "80,000", new Inventory);
+// $car2->price();
+
+
+
+
+
+
+
+// Abstract Classes
+
+// require("classes/abstractStory.php");
+// require("classes/Car.php");
+// require("classes/Inventory.php");
+// require("classes/Honda.php");
+// require("classes/BMW.php");
+
+
+
+
+// $car1 = new Honda("Civic", 2, "Green", "25,000", new Inventory);
+// $car1->price();
+// $car2 = new BMW("ML350", 4, "Blue", "80,000", new Inventory);
+// $car2->price();
+// $car1->storyTime();
+// $car2->storyTime();
+
+
+
+
+
+
+
+
+
+// Method Chaining
+
+// require("classes/abstractStory.php");
+// require("classes/Car.php");
+// require("classes/text.php");
+// require("classes/Inventory.php");
+// require("classes/Honda.php");
+// require("classes/BMW.php");
+
+
+
+
+
+// $car1 = new Honda("Civic", 2, "Green", "25,000", new Inventory);
+// $car1->price();
+// $car2 = new BMW("ML350", 4, "Blue", "80,000", new Inventory);
+// $car2->price();
+// $car1->storyTime();
+// $car2->storyTime();
+
+// $myName = new Text("Give glory to God the Son and the Holy Spirit Amen");
+// $myName->upperCase()->reverse()->print();
+
+
+
+
+
+
+
+
+
+// Namespaces
+
+require("class/cars/name.php");
+require("class/user/name.php");
+
+use App\Cars\Name as carName;
+use App\User\Name as userName;
+
+$carName = new carName("Jesus ");
+$userName = new userName("Yahwhey");
+
+echo $carName->name;
+echo $userName->name;
 ?>
 
 <!DOCTYPE html>

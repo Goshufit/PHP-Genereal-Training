@@ -1,6 +1,6 @@
 <?php 
 
-class Car {
+class Car extends Story{
     public $doors = 4;
     public $color = "black";
     public $company = "Nissan";
@@ -31,6 +31,11 @@ class Car {
                 echo "<h1>{$state}</h1>";
         }
             
+    }
+
+    public function printCompanyYears() {
+
+        return $this->companyYears;
     }
     
 
